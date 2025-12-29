@@ -48,7 +48,7 @@ classDiagram
         +Boolean driving_license
     }
 
-    note for JobPosting "Normalization Logic:\n'Servitör' -> 'Waiter'\n'Utvecklare' -> 'Developer'"
+    note for JobPosting "Normalization Logic:\n 'Servitör' -> 'Waiter'\n'Utvecklare' -> 'Developer'"
 ```
 
 ---

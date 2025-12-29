@@ -46,8 +46,17 @@ Phase 2: AI-Enhanced Capabilities
   - Context-aware Q&A without sending data to the cloud.
 
 ### 📸 Screenshots
-demo_extration()
-demo_rag()
+<p align="center">
+  <img src="img_demo/demo1.png" alt="demo_extraction" width="80%">
+  <br>
+  <em>demo_extraction</em>
+</p>
+
+<p align="center">
+  <img src="img_demo/demo2.png" alt="demo_extraction" width="80%">
+  <br>
+  <em>demo_rag</em>
+</p>
 
 ---
 

@@ -46,6 +46,8 @@ Phase 2: AI-Enhanced Capabilities
   - Context-aware Q&A without sending data to the cloud.
 
 ### 📸 Screenshots
+demo_extration()
+demo_rag()
 
 ---
 

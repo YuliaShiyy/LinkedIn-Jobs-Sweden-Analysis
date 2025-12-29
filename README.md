@@ -4,7 +4,8 @@ This project documents the evolution of a data pipeline designed to analyze the 
 It is part of the broader [LinkedIn Jobs Pipeline Project](https://github.com/yuliashiyy/linkedin-jobs-pipeline).
 
 ---
-📈 Project Evolution
+##📈 Project Evolution
+
 The project was built in two distinct phases to address the limitations of traditional keyword matching:
 
 Phase 1: The Foundation (Traditional EDA)

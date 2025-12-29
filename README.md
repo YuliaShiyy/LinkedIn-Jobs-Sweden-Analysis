@@ -47,13 +47,13 @@ Phase 2: AI-Enhanced Capabilities
 
 ### 📸 Screenshots
 <p align="center">
-  <img src="img_demo/demo1.png" alt="demo_extraction" width="80%">
+  <img src="img_demo/Demo1.png" alt="demo_extraction" width="80%">
   <br>
   <em>demo_extraction</em>
 </p>
 
 <p align="center">
-  <img src="img_demo/demo2.png" alt="demo_extraction" width="80%">
+  <img src="img_demo/Demo2.png" alt="demo_extraction" width="80%">
   <br>
   <em>demo_rag</em>
 </p>

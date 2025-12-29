@@ -12,12 +12,12 @@ Phase 1: The Foundation (Traditional EDA)
 
  - Method: Pandas, Regex, and Standard Visualization.
 
-Phase 2: The AI Upgrade (Local RAG & LLMs) 🚀
-Goal: Solve semantic normalization and extract structured skills from unstructured text.
+Phase 2: The AI Upgrade (Local RAG & LLMs) 
+ - Goal: Solve semantic normalization and extract structured skills from unstructured text.
 
-Method: Implemented Local LLMs (Ollama/Llama 3) and a RAG (Retrieval-Augmented Generation) architecture.
+ - Method: Implemented Local LLMs (Ollama/Llama 3) and a RAG (Retrieval-Augmented Generation) architecture.
 
-Result: The system now outputs standardized JSON objects (Schema-enforced), intelligently separating technical stacks from personality traits, and enables Context-Aware Search (RAG).
+ - Result: The system now outputs standardized JSON objects (Schema-enforced), intelligently separating technical stacks from personality traits, and enables Context-Aware Search (RAG).
 
 
 ---

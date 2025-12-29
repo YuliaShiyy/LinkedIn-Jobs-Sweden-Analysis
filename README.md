@@ -24,8 +24,35 @@ Building this with GPT-4 would have been easy. Building it with Local LLMs requi
    - Performance: Balancing context window size vs. processing speed.
  - Result: The system now outputs standardized JSON objects (Schema-enforced), intelligently separating technical stacks from personality traits, and enables Context-Aware Search (RAG).
 
+---
+## Architecture
+```mermaid
+classDiagram
+    note "Lightweight Ontology Schema"
+    JobPosting <|-- Skills
+    JobPosting <|-- Requirements
+
+    class JobPosting {
+        +String normalized_title
+        +Boolean is_remote
+        +int min_experience
+    }
+
+    class Skills {
+        +List~String~ hard_skills
+        +List~String~ soft_skills
+    }
+
+    class Requirements {
+        +List~String~ languages
+        +Boolean driving_license
+    }
+
+    note for JobPosting "Normalization Logic:\n'Servitör' -> 'Waiter'\n'Utvecklare' -> 'Developer'"
+```
 
 ---
+
 ## 📊 Features by Phase
 Phase 1: Data Cleaning & Analysis
 - Data Deduplication: Removed duplicate job entries based on `job_id`.

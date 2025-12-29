@@ -17,7 +17,11 @@ Phase 2: The AI Upgrade (Local RAG & LLMs)
  - Goal: Solve semantic normalization and extract structured skills from unstructured text.
 
  - Method: Implemented Local LLMs (Ollama/Llama 3) and a RAG (Retrieval-Augmented Generation) architecture.
-
+ - Why Local AI?
+Building this with GPT-4 would have been easy. Building it with Local LLMs required solving real engineering challenges:
+   - Parsing "Chatty" Models: Llama 3 loves to talk. I wrote custom cleaning logic to strip markdown and extract pure JSON.
+   - Prompt Engineering: Fine-tuning prompts to ensure consistent JSON structure from a smaller model.
+   - Performance: Balancing context window size vs. processing speed.
  - Result: The system now outputs standardized JSON objects (Schema-enforced), intelligently separating technical stacks from personality traits, and enables Context-Aware Search (RAG).
 
 
@@ -37,28 +41,30 @@ Phase 2: AI-Enhanced Capabilities
   - Robust parsing logic to handle "noisy" outputs from Local SLMs.
 - Semantic Normalization:
   - Auto-translates Swedish requirements to English standards.
-
 - Local RAG System:
   - Vector-based semantic search using ChromaDB.
   - Context-aware Q&A without sending data to the cloud.
+
+### 📸 Screenshots
+
 ---
 
 ## 📂 Project Structure
     linkedin-jobs-analysis/
     │
     ├── data/
-    │ ├── linkedin_jobs_sample.csv
-    │ └── linkedin_jobs_cleaned_with_skills.csv
+    │ ├── linkedin_jobs_sample.csv   
+    │ └── linkedin_jobs_cleaned_with_skills.csv    # cleaned data
     │
-    ├── notebooks/
-    │ ├── analysis.ipynb
-    │ └── ai_features_demo.ipynb
+    ├── notebooks/   
+    │ ├── analysis.ipynb                           # [Phase 1] Basic Analysis (Pandas/Matplotlib)
+    │ └── ai_features_demo.ipynb                   # [Phase 2] AI Upgrade (Local RAG/Ollama)
     |
-    ├── src/
+    ├── src/                                       # [Phase 2] New Engineering Module
     │ ├── __init__.py
-    │ ├── extractor.py
-    │ ├── rag_engine.py
-    │ └── hybrid_logic.py
+    │ ├── extractor.py                             # Extraction Engine
+    │ ├── rag_engine.py                            # RAG Engine
+    │ └── hybrid_logic.py                          # hybrid logic
     |
     ├── visualizations/
     │ ├── top10_cities.png
@@ -126,4 +132,9 @@ To experience the Local LLM and RAG pipeline:
 ## 📌 Related Repositories
 
 - [LinkedIn Jobs Scraper](https://github.com/yuliashiyy/linkedin-jobs-scraper)  
-- [LinkedIn Jobs Pipeline](https://github.com/yuliashiyy/linkedin-jobs-pipeline)  
+- [LinkedIn Jobs Pipeline](https://github.com/yuliashiyy/linkedin-jobs-pipeline)
+
+---
+
+## 📝 License
+MIT License. Free to use for everyone!
